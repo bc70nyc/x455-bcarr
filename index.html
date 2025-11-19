@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+  
+  h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+  body {font-family: "Open Sans"}
+
+  /* Adjustable thumbnail size */
+  :root {
+    --gallery-size: 200px;
+  }
+
+  /* Perfect uniform squares + EVEN PADDING */
+  .gallery-thumb {
+    width: var(--gallery-size);
+    height: var(--gallery-size);
+    object-fit: cover;
+    cursor: pointer;
+    padding: 10px; /* even spacing */
+  }
+</style>
+
+
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +39,7 @@ body {font-family: "Open Sans"}
 
 <!-- Navigation bar -->
 <div class="w3-bar w3-white w3-hide-small w3-center-align">
-  <button id="PD" class="w3-button w3-white w3-w3-margin-right" style="margin-top:38px;"> PD </button>
+  <a href="index.html#PDBtn" class="w3-button w3-white w3-w3-margin-right" style="margin-top:38px;"> PD </a>
   <a href="index.html#joinBtn" class="w3-button w3-white w3-margin-right" style="margin-top:38px;">Join</a>
   <a href="index.html#aboutBtn" class="w3-button w3-white w3-margin-right" style="margin-top:38px;">About</a>
   <a href="index.html#artBtn" class="w3-button w3-white w3-margin-right" style="margin-top:38px;">Art</a>
@@ -70,7 +91,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 </style>
 
 
-<h1>Art and Social Change</h1>
+<h1>Art for Social Change</h1>
 
 </body>
 
@@ -117,15 +138,17 @@ and is wrapped around the whole page content, except for the footer in this exam
 
       <!-- Blog entry -->
       <div class="w3-container w3-white w3-margin w3-padding-large">
+       <button class="w3-button w3-white w3-border w3-border-blue">PD</button>
         <div class="w3-center">
+          <div id="joinBtn"></div>
           <h3>JOIN US!</h3>
         </div>
 
         <div class="w3-justify">
+          
           <img src="PEACESIGN.jpg" alt="Join" style="width: 90px;" class="w3-padding-16">
           <p><strong>Get Involved!</strong></p>
-          <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies
-            mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+          <p>Joining an online community art activism group begins by finding a platform whose mission aligns with your values and creative interests. Most communities offer simple sign-up options through their website or social media, allowing new members to share artwork, join discussions, and participate in collaborative projects. Once you’re in, engaging consistently—by posting your work, offering feedback, and attending virtual events—helps you become an active and connected part of the movement.</p>
           <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
           <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
           <p class="w3-clear"></p>
@@ -288,7 +311,8 @@ and is wrapped around the whole page content, except for the footer in this exam
   <div style="height:50px;"></div>
 
   <!-- 🌟 New Section 1 -->
- 
+ <div id="aboutBtn"></div>
+ <button class="w3-button w3-white w3-border w3-border-blue">PD</button>
 <section id="about" class="w3-container w3-padding-40 w3-light-grey">
   <h2></h2><h2><h2 style="text-align:center; font-size:40px;">About</h2>
 
@@ -302,7 +326,7 @@ and is wrapped around the whole page content, except for the footer in this exam
     It brings together painters, musicians, dancers, and writers to celebrate the shared strength found in artistic expression. 
     By hosting public workshops, festivals, and exhibits, the organization fosters connection and healing through the arts. 
     Its mission is to show that when creativity and community intertwine, they build a foundation of empathy, resilience, and collective power.
-    <strong>The Peaceful Disruptor</strong> is an arts organization dedicated to uniting communities through creativity and collaboration. 
+    <strong>The Community</strong> is an arts organization dedicated to uniting communities through creativity and collaboration. 
     It brings together painters, musicians, dancers, and writers to celebrate the shared strength found in artistic expression. 
     By hosting public workshops, festivals, and exhibits, the organization fosters connection and healing through the arts. 
     Its mission is to show that when creativity and community intertwine, they build a foundation of empathy, resilience, and collective power.
@@ -315,7 +339,7 @@ and is wrapped around the whole page content, except for the footer in this exam
       src="peacewall.jpg" 
       alt="Peace Wall" 
       style="width:200px; float:right; margin:0 0 15px 20px; border-radius:8px;">
-    <strong>The Peaceful Disruptor</strong> continues its mission by connecting artists from diverse backgrounds. 
+    <strong>Your contribution</strong> continues its mission by connecting artists from diverse backgrounds. 
     Through collaboration and mutual respect, it transforms public spaces into living art galleries that tell stories of peace, unity, and hope. 
     The organization believes that every mural, performance, and poem adds another brushstroke to a collective masterpiece of human connection.<strong>The Peaceful Disruptor</strong> is an arts organization dedicated to uniting communities through creativity and collaboration. 
     It brings together painters, musicians, dancers, and writers to celebrate the shared strength found in artistic expression. 
@@ -334,12 +358,13 @@ and is wrapped around the whole page content, except for the footer in this exam
       Click here to donate to the ACLU
     </a>
   </p>
-  
+  <div id="artBtn"></div>
 </section>
 
    <!-- Navigation bar -->
   
   <section id="art" class="w3-container w3-padding-64 w3-white">
+    <button class="w3-button w3-white w3-border w3-border-blue">PD</button>
     <h2><h2 style="text-align:center; font-size:40px;">Art
     
 <title>W3.CSS</title>
@@ -423,7 +448,8 @@ function showDivs(n) {
   From protest murals to spoken-word poetry, creative expression can spark dialogue, inspire movements, and humanize the struggles behind statistics. 
 </div>
 
-
+<div id="musicBtn"></div>
+<button class="w3-button w3-white w3-border w3-border-blue">PD</button>
   </section>
 
   <!-- 🌟 New Section 5 -->
@@ -482,6 +508,7 @@ table, th, td {
 
 
 
+<div id="performanceBtn"></div>
 
   </section>
 
@@ -513,68 +540,7 @@ table, th, td {
 
 
 
-  <table id="people">
-    <thead>
-      <tr>
-        <!-- Choose type: text | number | date -->
-        <th scope="col" data-type="text" aria-sort="none">
-          <button type="button">Name <span class="arrow" aria-hidden="true"></span></button>
-        </th>
-        <th scope="col" data-type="text" aria-sort="none">
-          <button type="button">Role <span class="arrow" aria-hidden="true"></span></button>
-        </th>
-        <th scope="col" data-type="number" aria-sort="none">
-          <button type="button">Age <span class="arrow" aria-hidden="true"></span></button>
-        </th>
-        <th scope="col" data-type="date" aria-sort="none">
-          <button type="button">Start Date <span class="arrow" aria-hidden="true"></span></button>
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td>Monet Exchange</td><td>Singer</td><td>36</td><td>2019-03-22</td></tr>
-      <tr><td>Macky Fabulash</td><td>Drummer</td><td>45</td><td>2018-07-22</td></tr>
-      <tr><td>Raja Gemini</td><td>Trumpet</td><td>41</td><td>2021-01-25</td></tr>
-      <tr><td>Raven Dupree</td><td>Violinist</td><td>38</td><td>2020-10-23</td></tr>
-      <tr><td>RuPaul Charles</td><td>Rap Artist</td><td>47</td><td>2017-05-24</td></tr>
-    </tbody>
-  </table>
   
-
-  <script>
-    // Utility parsers for different data types
-    function parseByType(value, type) {
-      if (type === "number") return parseFloat(value.replace(/[^0-9.\-]/g, "")) || 0;
-      if (type === "date") return new Date(value).getTime() || 0;
-      return value.toString().toLowerCase().trim();
-    }
-
-    function sortTableByColumn(table, colIndex, type, direction = "asc") {
-      const tbody = table.tBodies[0];
-      const rows =
-
-
-
-function likeFunction(x) {
-  x.style.fontWeight = "bold";
-  x.innerHTML = "✓ Liked";
-}
-</script>
-
-
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
-</style>
-<body class="w3-white">
 
 
   </header>
@@ -584,6 +550,7 @@ body {font-family: "Open Sans"}
 
   <!-- Grid -->
   <div class="w3-row w3-padding w3-border">
+    
 
     <!-- Blog entries -->
     <div class="w3-col l8 s12">
@@ -601,6 +568,7 @@ body {font-family: "Open Sans"}
       <!-- Blog entry -->
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
+          <button class="w3-button w3-white w3-border w3-border-blue">PD</button>
          <section id="performance" class="w3-container w3-padding-64 w3-white">
     
           <h3>Performance</h3>
@@ -738,8 +706,53 @@ body {font-family: "Open Sans"}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <div class="w3-container">
+ 
+  <!-- Thumbnail Gallery -->
+<div class="w3-row-padding w3-center">
 
-<footer class="w3-container w3-dark-grey" style="padding:60px; width:100%;">
+  <div class="w3-col s4 m4 l4">
+    <img src="Boris-Charmatz_Flash-Art-03.jpg" data-full="Boris-Charmatz_Flash-Art-03.jpg"
+         class="gallery-thumb"
+         onclick="openLightbox(this)" alt="Image 1">
+  </div>
+
+  <div class="w3-col s4 m4 l4">
+    <img src="streetdrawing.jpg" data-full="streetdrawing.jpg"
+         class="gallery-thumb"
+         onclick="openLightbox(this)" alt="Image 2">
+  </div>
+
+  <div class="w3-col s4 m4 l4">
+    <img src="Oona-Doherty_Flash-Art-05.jpg" data-full="Oona-Doherty_Flash-Art-05.jpg"
+         class="gallery-thumb"
+         onclick="openLightbox(this)" alt="Image 3">
+  </div>
+
+  <div class="w3-col s4 m4 l4">
+    <img src="coverup.jpg" data-full="coverup.jpg"
+         class="gallery-thumb"
+         onclick="openLightbox(this)" alt="Image 4">
+  </div>
+
+  <div class="w3-col s4 m4 l4">
+    <img src="Ligia-Lewis_Flash-Art-10.jpg" data-full="Ligia-Lewis_Flash-Art-10.jpg"
+         class="gallery-thumb"
+         onclick="openLightbox(this)" alt="Image 5">
+  </div>
+
+  <div class="w3-col s4 m4 l4">
+    <img src="landing pic.jpg" data-full="landing pic.jpg"
+         class="gallery-thumb"
+         onclick="openLightbox(this)" alt="Image 6">
+  </div>
+
+</div>
+
+
+</div>
+
+
+<footer class="w3-container w3-dark-grey" style="padding:40px; width:100%;">
 
   <!-- Button (left aligned) -->
   <a href="#" class="w3-button w3-black w3- w3-margin-bottom" style="display:inline-block;">
@@ -760,6 +773,29 @@ body {font-family: "Open Sans"}
 </footer>
 
 </section>
+<!-- Lightbox Modal -->
+<div id="lightboxModal" class="w3-modal" onclick="closeLightbox()">
+  <span class="w3-button w3-display-topright w3-black" style="font-size:24px;" onclick="closeLightbox()">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom" style="max-width:800px;">
+    <img id="lightboxImg" style="width:100%; border-radius:8px;">
+  </div>
+</div>
+<!-- Lightbox Script -->
+<script>
+function openLightbox(imgElement) {
+  const full = imgElement.dataset.full || imgElement.src;
+  document.getElementById("lightboxImg").src = full;
+  document.getElementById("lightboxModal").style.display = "block";
+}
+
+function closeLightbox() {
+  document.getElementById("lightboxModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
 </body>
 
 </html>
